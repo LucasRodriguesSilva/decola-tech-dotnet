@@ -9,9 +9,11 @@
 
 int a = Convert.ToInt32("10");
 
+string d = a.ToString();
+
 // Console.WriteLine(a + 5);
 
 string b = "10";
 int c = int.Parse(b);
 
-Console.WriteLine(a+c);
+Console.WriteLine(d+c);
