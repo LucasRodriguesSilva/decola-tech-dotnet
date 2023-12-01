@@ -1,4 +1,6 @@
-﻿using Project.Models;
+﻿// esse código é somente das aulas que estou aprendendo na DIO.
+
+using Project.Models;
 
 People pessoa1 = new People();
 
@@ -45,4 +47,24 @@ else if(quantidadeETemEstoqueValido)
 else
 {
     Console.WriteLine("Não temos em estoque");
+}
+
+// Aqui é escolhido uma vogal
+
+string vogal = Console.ReadLine();
+
+// coloquei um ToLower para que a letra maiúscula se transoforme em minúscula e possa ser feita a verificação
+switch (vogal.ToLower())
+{
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("Isso é uma vogal!");
+        break;
+
+    default:
+        Console.WriteLine("Isso não é uma vogal");
+        break;
 }
