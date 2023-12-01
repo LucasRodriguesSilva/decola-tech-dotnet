@@ -51,7 +51,10 @@ else
 
 // Aqui é escolhido uma vogal
 
-string vogal = Console.ReadLine();
+Console.WriteLine("Escolha uma vogal");
+// string vogal = Console.ReadLine();
+// Conmentei o código ReadLine, para ter um código contínuo
+string vogal = "A";
 
 // coloquei um ToLower para que a letra maiúscula se transoforme em minúscula e possa ser feita a verificação
 switch (vogal.ToLower())
@@ -67,4 +70,43 @@ switch (vogal.ToLower())
     default:
         Console.WriteLine("Isso não é uma vogal");
         break;
+}
+
+// Operadores
+
+bool maiorDeIdade = true;
+bool possuiAutorizacaoDeUmResponsavel = false;
+
+if(maiorDeIdade || possuiAutorizacaoDeUmResponsavel)
+{
+    Console.WriteLine("Entrada autorizada!");
+}
+else
+{
+    Console.WriteLine("Não possui autorização para entrar");
+}
+
+bool estavaPresenteNasAulas = false;
+double qualFoiAMedia = 7.5;
+
+if(estavaPresenteNasAulas && qualFoiAMedia == 7)
+{
+    Console.WriteLine("Aprovado!");
+}
+else
+{
+    Console.WriteLine("Reprovado!");
+}
+
+
+bool taChovendo = false;
+bool taTarde = false;
+
+if(!taChovendo && !taTarde)
+{
+    Console.WriteLine("Uhul, vamos pedalar de bicicleta!");
+}
+else
+{
+    Console.WriteLine("Hoje não tem como sai de bicicleta");
 }
