@@ -108,7 +108,7 @@ if(!taChovendo && !taTarde)
 }
 else
 {
-    Console.WriteLine("Hoje não tem como sai de bicicleta");
+    Console.WriteLine("Hoje não tem como sair de bicicleta");
 }
 
 Calculadora calcular = new Calculadora();
@@ -116,4 +116,5 @@ Calculadora calcular = new Calculadora();
 calcular.Somar(5, 7);
 calcular.Subtrair(1, 10);
 calcular.Multiplicar(-1, 10);
-calcular.Dividir(10,3 );
+calcular.Dividir(10, 3);
+calcular.Potenciacao(3, 3);

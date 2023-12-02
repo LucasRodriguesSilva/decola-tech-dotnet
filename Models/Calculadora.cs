@@ -19,10 +19,17 @@ namespace Project.Models
         {
             Console.WriteLine($"{x} * {y} = {x * y}");
         }
-        public void Dividir(int x, int y)
+        public void Dividir(double x, double y)
         {
-            Console.WriteLine($"{x} / {y} = {x / y}");
-        } 
+            double numeroDividido = Math.Round((x / y), 2);
+            Console.WriteLine($"{x} / {y} = {numeroDividido}");
+        }
+
+        public void Potenciacao(int x, int y)
+        {
+            double potencia = Math.Pow(x, y);
+            Console.WriteLine($"{x} ^ {y} = {potencia}");
+        }
 
     }
 }
