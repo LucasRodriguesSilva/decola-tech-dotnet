@@ -30,6 +30,25 @@ namespace Project.Models
             double potencia = Math.Pow(x, y);
             Console.WriteLine($"{x} ^ {y} = {potencia}");
         }
+        public void Seno(double angulo)
+        {
+            double radiano = angulo * (Math.PI / 180);
+            double seno = Math.Sin(radiano);
+            Console.WriteLine($"Seno de {angulo}° = {Math.Round(seno, 4)}");
+        }
+        public void Conseno(double angulo)
+        {
+            double radiano = angulo * (Math.PI / 180);
+            double conseno = Math.Cos(radiano);
+            Console.WriteLine($"Conseno de {angulo}° = {Math.Round(conseno, 4)}");
+        }
+        public void Tangente(double angulo)
+        {
+            double radiano = angulo * (Math.PI / 180);
+            double tangente = Math.Tan(radiano);
+            Console.WriteLine($"Tangente de {angulo}° = {Math.Round(tangente, 4)}");
+        }
+
 
     }
 }

@@ -118,3 +118,6 @@ calcular.Subtrair(1, 10);
 calcular.Multiplicar(-1, 10);
 calcular.Dividir(10, 3);
 calcular.Potenciacao(3, 3);
+calcular.Seno(30);
+calcular.Conseno(30);
+calcular.Tangente(30);
