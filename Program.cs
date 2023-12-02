@@ -110,3 +110,10 @@ else
 {
     Console.WriteLine("Hoje não tem como sai de bicicleta");
 }
+
+Calculadora calcular = new Calculadora();
+
+calcular.Somar(5, 7);
+calcular.Subtrair(1, 10);
+calcular.Multiplicar(-1, 10);
+calcular.Dividir(10,3 );
