@@ -111,6 +111,7 @@ else
     Console.WriteLine("Hoje não tem como sair de bicicleta");
 }
 
+// Calculadora
 Calculadora calcular = new Calculadora();
 
 calcular.Somar(5, 7);
@@ -121,3 +122,12 @@ calcular.Potenciacao(3, 3);
 calcular.Seno(30);
 calcular.Conseno(30);
 calcular.Tangente(30);
+
+// Incremento e decremento
+int numeroIncrementar = 5;
+int numeroDecrementar = 5;
+numeroIncrementar++;
+numeroDecrementar--;
+
+Console.WriteLine($"O número {numeroIncrementar} será adicionado mais 1 e o resultado vai ficar {numeroIncrementar}");
+Console.WriteLine($"O número {numeroDecrementar} será subtraído menos 1 e o resultado vai ficar {numeroDecrementar}");
