@@ -48,7 +48,10 @@ namespace Project.Models
             double tangente = Math.Tan(radiano);
             Console.WriteLine($"Tangente de {angulo}° = {Math.Round(tangente, 4)}");
         }
-
-
+        public void RaizQuadrada(double x)
+        {
+            double y = Math.Round(Math.Sqrt(x), 1);
+            Console.WriteLine($"A raiz quadrada de {x} é {y}");
+        }
     }
 }

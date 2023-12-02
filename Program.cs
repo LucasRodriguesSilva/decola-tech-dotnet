@@ -122,6 +122,7 @@ calcular.Potenciacao(3, 3);
 calcular.Seno(30);
 calcular.Conseno(30);
 calcular.Tangente(30);
+calcular.RaizQuadrada(10);
 
 // Incremento e decremento
 int numeroIncrementar = 5;
