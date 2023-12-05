@@ -132,3 +132,41 @@ numeroDecrementar--;
 
 Console.WriteLine($"O número {numeroIncrementar} será adicionado mais 1 e o resultado vai ficar {numeroIncrementar}");
 Console.WriteLine($"O número {numeroDecrementar} será subtraído menos 1 e o resultado vai ficar {numeroDecrementar}");
+
+// Laço de repetição for
+
+int valorParaMultiplicar = 6;
+
+for(int contadorMultiplicar = 0; contadorMultiplicar <= 10; contadorMultiplicar++)
+{
+    Console.WriteLine($"{valorParaMultiplicar} x {contadorMultiplicar} = {valorParaMultiplicar * contadorMultiplicar}");
+}
+
+int valorParaSomar = 10;
+int contadorSomar = 0;
+
+// Laço de repetição while
+
+while(contadorSomar <= valorParaSomar)
+{
+    Console.WriteLine($"{valorParaSomar} + {contadorSomar} = {valorParaSomar + contadorSomar}");
+    contadorSomar++;
+
+    if(contadorSomar == 6)
+    {
+        break;
+    }
+}
+
+int quantidadeDaSomaDoNumeroInserido = 0, numeroInserido = 0;
+
+do
+{
+    Console.WriteLine("Digite o número 0 para parar:");
+    
+    numeroInserido = Convert.ToInt32(Console.ReadLine());
+    quantidadeDaSomaDoNumeroInserido += numeroInserido;
+
+} while(numeroInserido != 0);
+
+Console.WriteLine($"A soma dos números inseridos é {quantidadeDaSomaDoNumeroInserido}");
