@@ -170,3 +170,37 @@ do
 } while(numeroInserido != 0);
 
 Console.WriteLine($"A soma dos números inseridos é {quantidadeDaSomaDoNumeroInserido}");
+
+// Aqui é um menu interativo
+
+string opcao = "";
+
+while(opcao != "3")
+{
+    Console.WriteLine("1 - Entrar");
+    Console.WriteLine("2 - Cadastrar");
+    Console.WriteLine("3 - Sair");
+
+     opcao = Console.ReadLine();
+
+    switch(opcao)
+    {
+        case "1":
+            Console.WriteLine("Entrando");
+            break;
+
+        case "2":
+            Console.WriteLine("Cadastrando");
+            break;
+
+        case "3":
+            Console.WriteLine("Saindo");
+            break;
+        
+        default:
+            Console.WriteLine("Você escolheu uma opção inexistente");
+            break;
+    }
+}
+
+Console.WriteLine("Você saiu do menu interativo");
