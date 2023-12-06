@@ -163,8 +163,9 @@ int quantidadeDaSomaDoNumeroInserido = 0, numeroInserido = 0;
 do
 {
     Console.WriteLine("Digite o número 0 para parar:");
-    
-    numeroInserido = Convert.ToInt32(Console.ReadLine());
+    // inseri o número para o sistema continuar
+    numeroInserido = 0;
+    //numeroInserido = Convert.ToInt32(Console.ReadLine());
     quantidadeDaSomaDoNumeroInserido += numeroInserido;
 
 } while(numeroInserido != 0);
@@ -173,7 +174,8 @@ Console.WriteLine($"A soma dos números inseridos é {quantidadeDaSomaDoNumeroIn
 
 // Aqui é um menu interativo
 
-string opcao = "";
+// coloquei uma opção para ser contínuo
+string opcao = "3";
 
 while(opcao != "3")
 {
@@ -204,3 +206,52 @@ while(opcao != "3")
 }
 
 Console.WriteLine("Você saiu do menu interativo");
+
+// Trabalhando com array
+
+int[] numero = new int[] {10,20,30};
+
+// Usando o for
+for(int i = 0; i < numero.Length; i++ )
+{
+    Console.WriteLine($"O numero {i} é {numero[i]}");
+}
+
+// Usando o foreach
+
+foreach(int caixaDeNumeros in numero)
+{
+    Console.WriteLine(caixaDeNumeros);
+}
+
+// aumentando array
+
+Array.Resize(ref numero, numero.Length * 2);
+
+Console.WriteLine($"Quantida atual do array é = {numero.Length}");
+
+int[] copiaNumero = new int[numero.Length * 2];
+
+Array.Copy(numero, copiaNumero, numero.Length);
+
+Console.WriteLine($"Essa quantidade da copia do array é {copiaNumero.Length}");
+
+// trabalhando com lista
+
+List<int> lista = new List<int>();
+
+lista.Add(1);
+lista.Add(2);
+lista.Add(3);
+lista.Remove(3);
+
+for(int i = 0; i < lista.Count; i++)
+{
+    Console.WriteLine($"lista número {i} é {lista[i]} no for");
+}
+
+int numeroParaContagemDeLista = 0;
+foreach(int caixaDeLista in lista)
+{
+    Console.WriteLine($"lista número {numeroParaContagemDeLista} é {caixaDeLista} no foreach");
+}
