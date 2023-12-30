@@ -6,7 +6,7 @@ Este repositório destina-se a fornecer uma introdução abrangente à lógica d
 
 ## Conteúdo
 
-1. Introdução à Lógica de Programação e Pensamento Computacional
+1. Introdução à Lógica de Programação e Pensamento Computacional.
 
 2. Dominando a Linguagem de Programação C#.
 
